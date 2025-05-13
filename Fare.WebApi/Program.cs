@@ -1,4 +1,5 @@
 using System.Collections.Frozen;
+using System.ComponentModel;
 using System.Text.Json.Serialization;
 using Fare.Core;
 using Microsoft.AspNetCore.Mvc;
@@ -26,8 +27,13 @@ var all = Utilities.GetAllDistances(stns);
 app.MapOpenApi();
 app.MapScalarApiReference("/");
 
-app.MapGet("/All", () => TypedResults.Ok(all));
-app.MapGet("/Distance", ([FromQuery] string from, [FromQuery] string to) =>
+app.MapGet("/All", [EndpointSummary("Returns all station permutations")]() => TypedResults.Ok(all));
+app.MapGet("/Distance", (
+    [FromQuery] [Description("Station Name (example: 'Tanjong Pagar')")]
+    string from,
+    [FromQuery] [Description("Station Name (example: 'Bishan')")]
+    string to
+) =>
 {
     if (!all.TryGetValue($"[{from}][{to}]", out var distance))
     {
@@ -42,7 +48,7 @@ app.MapGet("/Distance", ([FromQuery] string from, [FromQuery] string to) =>
             Constants.AdultFare(distance)
         )
     );
-}).CacheOutput();
+});
 
 app.Run();
 
