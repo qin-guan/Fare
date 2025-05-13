@@ -2,8 +2,11 @@ using System.Collections.Frozen;
 using System.Text.Json.Serialization;
 using Fare.Core;
 using Microsoft.AspNetCore.Mvc;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateSlimBuilder(args);
+
+builder.Services.AddOpenApi();
 
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
@@ -11,6 +14,7 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 });
 
 var app = builder.Build();
+
 var stnData = Environment.GetEnvironmentVariable("STN_DATA");
 
 if (stnData is null)
@@ -19,15 +23,17 @@ if (stnData is null)
 var stns = Parser.Parse(stnData);
 var all = Utilities.GetAllDistances(stns);
 
-app.MapGet("/All", () => TypedResults.Ok(all));
+app.MapOpenApi();
+app.MapScalarApiReference("/");
 
+app.MapGet("/All", () => TypedResults.Ok(all));
 app.MapGet("/Distance", ([FromQuery] string from, [FromQuery] string to) =>
 {
     if (!all.TryGetValue($"[{from}][{to}]", out var distance))
     {
         throw new Exception("Invalid station name.");
     }
-    
+
     return TypedResults.Ok(
         new Response(
             distance,
@@ -36,7 +42,7 @@ app.MapGet("/Distance", ([FromQuery] string from, [FromQuery] string to) =>
             Constants.AdultFare(distance)
         )
     );
-});
+}).CacheOutput();
 
 app.Run();
 
