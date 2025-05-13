@@ -6,6 +6,11 @@ EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       clang zlib1g-dev
+
 WORKDIR /src
 COPY ["Fare.WebApi/Fare.WebApi.csproj", "Fare.WebApi/"]
 RUN dotnet restore "Fare.WebApi/Fare.WebApi.csproj"
