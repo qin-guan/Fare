@@ -1,3 +1,4 @@
+using System.Collections.Frozen;
 using System.Text.Json.Serialization;
 using Fare.Core;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +17,17 @@ if (stnData is null)
     ArgumentNullException.ThrowIfNull(stnData);
 
 var stns = Parser.Parse(stnData);
+var all = Utilities.GetAllDistances(stns);
+
+app.MapGet("/All", () => TypedResults.Ok(all));
 
 app.MapGet("/Distance", ([FromQuery] string from, [FromQuery] string to) =>
 {
-    var distance = Utilities.GetDistance(stns, s => s.Name == from, s => s.Name == to);
+    if (!all.TryGetValue($"[{from}][{to}]", out var distance))
+    {
+        throw new Exception("Invalid station name.");
+    }
+    
     return TypedResults.Ok(
         new Response(
             distance,
@@ -34,5 +42,9 @@ app.Run();
 
 public record Response(decimal Distance, decimal Student, decimal Senior, decimal Adult);
 
+[JsonSerializable(typeof(int))]
+[JsonSerializable(typeof(string))]
+[JsonSerializable(typeof(decimal))]
 [JsonSerializable(typeof(Response))]
+[JsonSerializable(typeof(FrozenDictionary<string, decimal>))]
 internal partial class AppJsonSerializerContext : JsonSerializerContext;

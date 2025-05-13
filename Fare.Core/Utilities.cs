@@ -1,9 +1,33 @@
+using System.Collections.Concurrent;
+using System.Collections.Frozen;
 using System.Linq.Expressions;
 
 namespace Fare.Core;
 
 public static class Utilities
 {
+    public static FrozenDictionary<string, decimal> GetAllDistances(List<Node> nodes)
+    {
+        var dict = new ConcurrentDictionary<string, decimal>();
+
+        Parallel.ForEach(nodes, (from) =>
+        {
+            Parallel.ForEach(nodes, (to) =>
+            {
+                var distance = GetDistance(
+                    nodes,
+                    n => n.Name == from.Name && n.Line == from.Line,
+                    n => n.Name == to.Name && n.Line == to.Line
+                );
+
+                dict[$"[{from.Name}][{to.Name}]"] = distance;
+                dict[$"[{to.Name}][{from.Name}]"] = distance;
+            });
+        });
+
+        return dict.ToFrozenDictionary();
+    }
+
     public static decimal GetDistance(
         List<Node> nodes,
         Expression<Func<Node, bool>> fromSelector,
