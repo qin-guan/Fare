@@ -7,7 +7,14 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer((doc, _, _) =>
+    {
+        doc.Servers.Clear();
+        return Task.CompletedTask;
+    });
+});
 
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
@@ -27,7 +34,7 @@ var all = Utilities.GetAllDistances(stns);
 app.MapOpenApi();
 app.MapScalarApiReference("/");
 
-app.MapGet("/All", [EndpointSummary("Returns all station permutations")]() => TypedResults.Ok(all));
+app.MapGet("/All", [EndpointSummary("Returns all station permutations")] () => TypedResults.Ok(all));
 app.MapGet("/Distance", (
     [FromQuery] [Description("Station Name (example: 'Tanjong Pagar')")]
     string from,
