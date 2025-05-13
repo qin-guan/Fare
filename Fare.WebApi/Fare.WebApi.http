@@ -1,0 +1,11 @@
+@Fare.WebApi_HostAddress = http://localhost:5117
+
+GET {{Fare.WebApi_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{Fare.WebApi_HostAddress}}/todos/1
+Accept: application/json
+
+###
