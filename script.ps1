@@ -1,0 +1,432 @@
+$env:STN_DATA = @"
+{|class="wikitable sortable"
+!class=unsortable|Station Pair
+!Line
+!Distance (km)
+!class=unsortable|Remarks
+|-
+|{{Stn/Bukit Panjang|code=|dt=}} ↔ {{Layout/Station|BP7}}||{{BPLRT}}||0.4||
+|-
+|{{Stn/Bukit Panjang|code=|dt=}} ↔ {{Layout/Station|BP14}}||{{BPLRT}}||0.4||Decommissioned
+|-
+|{{Layout/Station|PE1}} ↔ {{Layout/Station|PE2}}||{{PGLRT}}||0.4||
+|-
+|{{Layout/Station|PW1}} ↔ {{Layout/Station|PW2}}||{{PGLRT}}||0.4||
+|-
+|{{Layout/Station|PW5}} ↔ {{Layout/Station|PW6}}||{{PGLRT}}||0.4||
+|-
+|{{Layout/Station|PW6}} ↔ {{Layout/Station|PW7}}||{{PGLRT}}||0.4||
+|-
+|{{Layout/Station|DT12}} ↔ {{Layout/Station|DT13}}||{{DTL}}||0.5||
+|-
+|{{Layout/Station|BP2}} ↔ {{Layout/Station|BP3}}||{{BPLRT}}||0.5||
+|-
+|{{Layout/Station|BP4}} ↔ {{Layout/Station|BP5}}||{{BPLRT}}||0.5||
+|-
+|{{Layout/Station|BP8}} ↔ {{Layout/Station|BP9}}||{{BPLRT}}||0.5||
+|-
+|{{Layout/Station|BP10}} ↔ {{Layout/Station|BP11}}||{{BPLRT}}||0.5||
+|-
+|{{Layout/Station|SE2}} ↔ {{Layout/Station|SE3}}||{{SKLRT}}||0.5||
+|-
+|{{Layout/Station|SW1}} ↔ {{Layout/Station|SW2}}||{{SKLRT}}||0.5||
+|-
+|{{Layout/Station|SW5}} ↔ {{Layout/Station|SW6}}||{{SKLRT}}||0.5||
+|-
+|{{Layout/Station|PE2}} ↔ {{Layout/Station|PE3}}||{{PGLRT}}||0.5||
+|-
+|{{Layout/Station|PE3}} ↔ {{Layout/Station|PE4}}||{{PGLRT}}||0.5||
+|-
+|{{Layout/Station|PE5}} ↔ {{Layout/Station|PE6}}||{{PGLRT}}||0.5||
+|-
+|{{Layout/Station|PW2}} ↔ {{Layout/Station|PW3}}||{{PGLRT}}||0.5||
+|-
+|{{Layout/Station|PW4}} ↔ {{Layout/Station|PW5}}||{{PGLRT}}||0.5||
+|-
+|{{Stn/Chinatown|code=|dt=}} ↔ {{Layout/Station|NE5}}||{{NEL}}||0.6||
+|-
+|{{Stn/Dhoby Ghaut|code=|ns=|ne=}} ↔ {{Layout/Station|CC2}}||{{CCL}}||0.6||
+|-
+|{{Layout/Station|DT17}} ↔ {{Layout/Station|DT18}}||{{DTL}}||0.6||
+|-
+|{{Layout/Station|DT18}} ↔ {{Stn/Chinatown|code=|ne=}}||{{DTL}}||0.6||
+|-
+|{{Stn/Outram Park|code=|ew=|ne=}} ↔ {{Layout/Station|TE18}}||{{TEL}}||0.6||
+|-
+|{{Stn/Choa Chu Kang|code=|ns=}} ↔ {{Layout/Station|BP2}}||{{BPLRT}}||0.6||
+|-
+|{{Layout/Station|BP3}} ↔ {{Layout/Station|BP4}}||{{BPLRT}}||0.6||
+|-
+|{{Stn/Bukit Panjang|code=|dt=}} ↔ {{Layout/Station|BP13}}||{{BPLRT}}||0.6||
+|-
+|{{Layout/Station|BP7}} ↔ {{Layout/Station|BP8}}||{{BPLRT}}||0.6||
+|-
+|{{Layout/Station|BP12}} ↔ {{Layout/Station|BP13}}||{{BPLRT}}||0.6||
+|-
+|{{Layout/Station|SE3}} ↔ {{Layout/Station|SE4}}||{{SKLRT}}||0.6||
+|-
+|{{Layout/Station|SW4}} ↔ {{Layout/Station|SW5}}||{{SKLRT}}||0.6||
+|-
+|{{Layout/Station|SW7}} ↔ {{Layout/Station|SW8}}||{{SKLRT}}||0.6||
+|-
+|{{Layout/Station|PE6}} ↔ {{Layout/Station|PE7}}||{{PGLRT}}||0.6||
+|-
+|{{Layout/Station|PTC}} ↔ {{Layout/Station|PW1}}||{{PGLRT}}||0.6||
+|-
+|{{Layout/Station|PW3}} ↔ {{Layout/Station|PW4}}||{{PGLRT}}||0.6||
+|-
+|{{Stn/Outram Park|code=|ew=|te=}} ↔ {{Stn/Chinatown|code=|dt=}}||{{NEL}}||0.7||
+|-
+|{{Layout/Station|CC2}} ↔ {{Layout/Station|CC3}}||{{CCL}}||0.7||
+|-
+|{{Layout/Station|CC7}} ↔ {{Layout/Station|CC8}}||{{CCL}}||0.7||
+|-
+|{{Layout/Station|TE15}} ↔ {{Layout/Station|TE16}}||{{TEL}}||0.7||
+|-
+|{{Layout/Station|TE19}} ↔ {{Stn/Marina Bay|code=|ns=|cc=}}||{{TEL}}||0.7||
+|-
+|{{Layout/Station|BP5}} ↔ {{Stn/Bukit Panjang|code=|dt=}}||{{BPLRT}}||0.7||
+|-
+|{{Layout/Station|BP11}} ↔ {{Layout/Station|BP12}}||{{BPLRT}}||0.7||
+|-
+|{{Layout/Station|SE1}} ↔ {{Layout/Station|SE2}}||{{SKLRT}}||0.7||
+|-
+|{{Layout/Station|SW3}} ↔ {{Layout/Station|SW4}}||{{SKLRT}}||0.7||
+|-
+|{{Layout/Station|SW6}} ↔ {{Layout/Station|SW7}}||{{SKLRT}}||0.7||
+|-
+|{{Layout/Station|PE4}} ↔ {{Layout/Station|PE5}}||{{PGLRT}}||0.7||
+|-
+|{{Stn/Somerset}} ↔ {{Stn/Dhoby Ghaut|code=|ne=|cc=}}||{{NSL}}||0.8||
+|-
+|{{Layout/Station|NE7}} ↔ {{Layout/Station|NE8}}||{{NEL}}||0.8||
+|-
+|{{Layout/Station|CC3}} ↔ {{Stn/Promenade|code=|dt=}}||{{CCL}}||0.8||
+|-
+|{{Stn/Promenade|code=|dt=}} ↔ {{Layout/Station|CC5}}||{{CCL}}||0.8||
+|-
+|{{Stn/Buona Vista|code=|ew=}} ↔ {{Layout/Station|CC23}}||{{CCL}}||0.8||
+|-
+|{{Layout/Station|CC23}} ↔ {{Layout/Station|CC24}}||{{CCL}}||0.8||
+|-
+|{{Layout/Station|CC27}} ↔ {{Layout/Station|CC28}}||{{CCL}}||0.8||
+|-
+|{{Stn/Bayfront|code=|dt=}} ↔ {{Stn/Marina Bay|code=|ns=|te=}}||{{CCL}}||0.8||
+|-
+|{{Layout/Station|DT13}} ↔ {{Stn/Bugis|code=|ew=}}||{{DTL}}||0.8||
+|-
+|{{Layout/Station|DT25}} ↔ {{Layout/Station|DT26}}||{{DTL}}||0.8||
+|-
+|{{Layout/Station|TE18}} ↔ {{Layout/Station|TE19}}||{{TEL}}||0.8||
+|-
+|{{Layout/Station|STC}} ↔ {{Layout/Station|SE1}}||{{SKLRT}}||0.8||
+|-
+|{{Layout/Station|SE4}} ↔ {{Layout/Station|SE5}}||{{SKLRT}}||0.8||
+|-
+|{{Layout/Station|STC}} ↔ {{Layout/Station|SW1}}||{{SKLRT}}||0.8||
+|-
+|{{Stn/Braddell}} ↔ {{Stn/Toa Payoh}}||{{NSL}}||0.9||
+|-
+|{{Stn/Boon Lay|code=|jr=}} ↔ {{Stn/Pioneer}}||{{EWL}}||0.9||
+|-
+|{{Layout/Station|NE10}} ↔ {{Layout/Station|NE11}}||{{NEL}}||0.9||
+|-
+|{{Layout/Station|CC6}} ↔ {{Layout/Station|CC7}}||{{CCL}}||0.9||
+|-
+|{{Layout/Station|CC13}} ↔ {{Layout/Station|CC14}}||{{CCL}}||0.9||
+|-
+|{{Layout/Station|CC21}} ↔ {{Stn/Buona Vista|code=|ew=}}||{{CCL}}||0.9||
+|-
+|{{Layout/Station|DT2}} ↔ {{Layout/Station|DT3}}||{{DTL}}||0.9||
+|-
+|{{Stn/Bugis|code=|ew=}} ↔ {{Stn/Promenade|code=|cc=}}||{{DTL}}||0.9||
+|-
+|{{Stn/Bayfront|code=|cc=}} ↔ {{Layout/Station|DT17}}||{{DTL}}||0.9||
+|-
+|{{Layout/Station|DT21}} ↔ {{Layout/Station|DT22}}||{{DTL}}||0.9||
+|-
+|{{Layout/Station|DT34}} ↔ {{Stn/Expo|code=|dt=}}||{{DTL}}||0.9||
+|-
+|{{Layout/Station|TE12}} ↔ {{Layout/Station|TE13}}||{{TEL}}||0.9||
+|-
+|{{Layout/Station|BP9}} ↔ {{Layout/Station|BP10}}||{{BPLRT}}||0.9||
+|-
+|{{Layout/Station|SW2}} ↔ {{Layout/Station|SW3}}||{{SKLRT}}||0.9||
+|-
+|{{Layout/Station|STC}} ↔ {{Layout/Station|SW8}}||{{SKLRT}}||0.9||
+|-
+|{{Layout/Station|PTC}} ↔ {{Layout/Station|PE7}}||{{PGLRT}}||0.9||
+|-
+|{{Stn/Orchard|code=|te=}} ↔ {{Stn/Somerset}}||{{NSL}}||1.0||
+|-
+|{{Stn/Dhoby Ghaut|code=|ne=|cc=}} ↔ {{Stn/City Hall|code=|ew=}}||{{NSL}}||1.0||
+|-
+|{{Stn/City Hall|code=|ew=}} ↔ {{Stn/Raffles Place|code=|ew=}}||{{NSL}}||1.0||
+|-
+|{{Stn/Raffles Place|code=|ew=}} ↔ {{Stn/Marina Bay|code=|cc=|te=}}||{{NSL}}||1.0||
+|-
+|{{Layout/Station|EW12}} ↔ {{Stn/City Hall|code=|ns=}}||{{EWL}}||1.0||
+|-
+|{{Stn/City Hall|code=|ns=}} ↔ {{Stn/Raffles Place|code=|ns=}}||{{EWL}}||1.0||
+|-
+|{{Layout/Station|EW15}} ↔ {{Stn/Outram Park|code=|ne=|te=}}||{{EWL}}||1.0||
+|-
+|{{Stn/Dhoby Ghaut|code=|ns=|cc=}} ↔ {{Layout/Station|NE7}}||{{NEL}}||1.0||
+|-
+|{{Layout/Station|CC10}} ↔ {{Layout/Station|CC11}}||{{CCL}}||1.0||
+|-
+|{{Layout/Station|CC19}} ↔ {{Layout/Station|CC20}}||{{CCL}}||1.0||
+|-
+|{{Layout/Station|DT3}} ↔ {{Layout/Station|DT4}}||{{DTL}}||1.0||
+|-
+|{{Stn/Chinatown|code=|ne=}} ↔ {{Layout/Station|DT20}}||{{DTL}}||1.0||
+|-
+|{{Layout/Station|DT20}} ↔ {{Layout/Station|DT21}}||{{DTL}}||1.0||
+|-
+|{{Layout/Station|TE13}} ↔ {{Stn/Orchard|code=|ns=}}||{{TEL}}||1.0||
+|-
+|{{Stn/Orchard|code=|ns=}} ↔ {{Layout/Station|TE15}}||{{TEL}}||1.0||
+|-
+|{{Layout/Station|TE16}} ↔ {{Stn/Outram Park|code=|ew=|ne=}}||{{TEL}}||1.0||
+|-
+|{{Layout/Station|TE26}} ↔ {{Layout/Station|TE27}}||{{TEL}}||1.0||
+|-
+|{{Layout/Station|STC}} ↔ {{Layout/Station|SE5}}||{{SKLRT}}||1.0||
+|-
+|{{Layout/Station|PTC}} ↔ {{Layout/Station|PE1}}||{{PGLRT}}||1.0||
+|-
+|{{Layout/Station|PTC}} ↔ {{Layout/Station|PW7}}||{{PGLRT}}||1.0||
+|-
+|{{Stn/Kembangan}} ↔ {{Stn/Eunos}}||{{EWL}}||1.1||
+|-
+|{{Stn/Eunos}} ↔ {{Stn/Paya Lebar|code=|cc=}}||{{EWL}}||1.1||
+|-
+|{{Layout/Station|EW10}} ↔ {{Layout/Station|EW11}}||{{EWL}}||1.1||
+|-
+|{{Layout/Station|EW11}} ↔ {{Layout/Station|EW12}}||{{EWL}}||1.1||
+|-
+|{{Layout/Station|EW20}} ↔ {{Layout/Station|EW21}}||{{EWL}}||1.1||
+|-
+|{{Layout/Station|NE15}} ↔ {{Layout/Station|NE16}}||{{NEL}}||1.1||
+|-
+|{{Layout/Station|CC9}} ↔ {{Layout/Station|CC10}}||{{CCL}}||1.1||
+|-
+|{{Layout/Station|DT8}} ↔ {{Layout/Station|DT9}}||{{DTL}}||1.1||
+|-
+|{{Layout/Station|DT9}} ↔ {{Stn/Stevens|code=|te=}}||{{DTL}}||1.1||
+|-
+|{{Layout/Station|DT26}} ↔ {{Layout/Station|DT27}}||{{DTL}}||1.1||
+|-
+|{{Layout/Station|DT28}} ↔ {{Layout/Station|DT29}}||{{DTL}}||1.1||
+|-
+|{{Layout/Station|TE6}} ↔ {{Layout/Station|TE7}}||{{TEL}}||1.1||
+|-
+|{{Layout/Station|TE25}} ↔ {{Layout/Station|TE26}}||{{TEL}}||1.1||
+|-
+|{{Stn/Bukit Batok}} ↔ {{Stn/Bukit Gombak}}||{{NSL}}||1.2||
+|-
+|{{Stn/Bishan|code=|cc=}} ↔ {{Stn/Braddell}}||{{NSL}}||1.2||
+|-
+|{{Stn/Novena}} ↔ {{Stn/Newton|code=|dt=}}||{{NSL}}||1.2||
+|-
+|{{Stn/Newton|code=|dt=}} ↔ {{Stn/Orchard|code=|te=}}||{{NSL}}||1.2||
+|-
+|{{Stn/Paya Lebar|code=|cc=}} ↔ {{Layout/Station|EW9}}||{{EWL}}||1.2||
+|-
+|{{Stn/Raffles Place|code=|ns=}} ↔ {{Layout/Station|EW15}}||{{EWL}}||1.2||
+|-
+|{{Layout/Station|EW17}} ↔ {{Layout/Station|EW18}}||{{EWL}}||1.2||
+|-
+|{{Layout/Station|EW19}} ↔ {{Layout/Station|EW20}}||{{EWL}}||1.2||
+|-
+|{{Layout/Station|NE8}} ↔ {{Layout/Station|NE9}}||{{NEL}}||1.2||
+|-
+|{{Layout/Station|NE11}} ↔ {{Layout/Station|NE12}}||{{NEL}}||1.2||
+|-
+|{{Layout/Station|CC8}} ↔ {{Layout/Station|CC9}}||{{CCL}}||1.2||
+|-
+|{{Layout/Station|CC16}} ↔ {{Stn/Caldecott|code=|te=}}||{{CCL}}||1.2||
+|-
+|{{Layout/Station|DT1}} ↔ {{Layout/Station|DT2}}||{{DTL}}||1.2||
+|-
+|{{Layout/Station|DT5}} ↔ {{Layout/Station|DT6}}||{{DTL}}||1.2||
+|-
+|{{Layout/Station|DT27}} ↔ {{Layout/Station|DT28}}||{{DTL}}||1.2||
+|-
+|{{Layout/Station|TE24}} ↔ {{Layout/Station|TE25}}||{{TEL}}||1.2||
+|-
+|{{Stn/Tuas West Road}} ↔ {{Stn/Tuas Link}}||{{EWL}}||1.3||
+|-
+|{{Layout/Station|NE14}} ↔ {{Layout/Station|NE15}}||{{NEL}}||1.3||
+|-
+|{{Layout/Station|CC11}} ↔ {{Layout/Station|CC12}}||{{CCL}}||1.3||
+|-
+|{{Layout/Station|CC12}} ↔ {{Layout/Station|CC13}}||{{CCL}}||1.3||
+|-
+|{{Layout/Station|CC25}} ↔ {{Layout/Station|CC26}}||{{CCL}}||1.3||
+|-
+|{{Stn/Promenade|code=|dt=}} ↔ {{Stn/Bayfront|code=|dt=}}||{{CCL}}||1.3||
+|-
+|{{Layout/Station|DT7}} ↔ {{Layout/Station|DT8}}||{{DTL}}||1.3||
+|-
+|{{Stn/Promenade|code=|cc=}} ↔ {{Stn/Bayfront|code=|cc=}}||{{DTL}}||1.3||
+|-
+|{{Layout/Station|DT22}} ↔ {{Layout/Station|DT23}}||{{DTL}}||1.3||
+|-
+|{{Layout/Station|DT31}} ↔ {{Layout/Station|DT32}}||{{DTL}}||1.3||
+|-
+|{{Layout/Station|TE28}} ↔ {{Layout/Station|TE29}}||{{TEL}}||1.3||
+|-
+|{{Stn/Choa Chu Kang|code=|bp=}} ↔ {{Stn/Yew Tee}}||{{NSL}}||1.4||
+|-
+|{{Stn/Yishun}} ↔ {{Stn/Khatib}}||{{NSL}}||1.4||
+|-
+|{{Stn/Marina Bay|code=|cc=|te=}} ↔ {{Stn/Marina South Pier}}||{{NSL}}||1.4||
+|-
+|{{Layout/Station|EW2}} ↔ {{Layout/Station|EW3}}||{{EWL}}||1.4||
+|-
+|{{Layout/Station|EW9}} ↔ {{Layout/Station|EW10}}||{{EWL}}||1.4||
+|-
+|{{Layout/Station|EW18}} ↔ {{Layout/Station|EW19}}||{{EWL}}||1.4||
+|-
+|{{Layout/Station|EW21}} ↔ {{Layout/Station|EW22}}||{{EWL}}||1.4||
+|-
+|{{Layout/Station|EW25}} ↔ {{Layout/Station|EW26}}||{{EWL}}||1.4||
+|-
+|{{Stn/Tuas Crescent}} ↔ {{Stn/Tuas West Road}}||{{EWL}}||1.4||
+|-
+|{{Layout/Station|NE5}} ↔ {{Stn/Dhoby Ghaut|code=|ns=|cc=}}||{{NEL}}||1.4||
+|-
+|{{Layout/Station|CC20}} ↔ {{Layout/Station|CC21}}||{{CCL}}||1.4||
+|-
+|{{Layout/Station|CC24}} ↔ {{Layout/Station|CC25}}||{{CCL}}||1.4||
+|-
+|{{Layout/Station|CC26}} ↔ {{Layout/Station|CC27}}||{{CCL}}||1.4||
+|-
+|{{Stn/Newton|code=|ns=}} ↔ {{Layout/Station|DT12}}||{{DTL}}||1.4||
+|-
+|{{Layout/Station|DT23}} ↔ {{Layout/Station|DT24}}||{{DTL}}||1.4||
+|-
+|{{Layout/Station|DT32}} ↔ {{Layout/Station|DT33}}||{{DTL}}||1.4||
+|-
+|{{Layout/Station|TE1}} ↔ {{Stn/Woodlands|code=|ns=}}||{{TEL}}||1.4||
+|-
+|{{Stn/Woodlands|code=|ns=}} ↔ {{Layout/Station|TE3}}||{{TEL}}||1.4||
+|-
+|{{Layout/Station|TE7}} ↔ {{Layout/Station|TE8}}||{{TEL}}||1.4||
+|-
+|{{Stn/Marsiling}} ↔ {{Stn/Woodlands|code=|te=}}||{{NSL}}||1.5||
+|-
+|{{Stn/Sembawang}} ↔ {{Stn/Canberra}}||{{NSL}}||1.5||
+|-
+|{{Stn/Yio Chu Kang}} ↔ {{Stn/Ang Mo Kio}}||{{NSL}}||1.5||
+|-
+|{{Stn/Toa Payoh}} ↔ {{Stn/Novena}}||{{NSL}}||1.5||
+|-
+|{{Stn/Outram Park|code=|ne=|te=}} ↔ {{Layout/Station|EW17}}||{{EWL}}||1.5||
+|-
+|{{Stn/Jurong East|code=|ns=}} ↔ {{Layout/Station|EW25}}||{{EWL}}||1.5||
+|-
+|{{Layout/Station|NE13}} ↔ {{Layout/Station|NE14}}||{{NEL}}||1.5||
+|-
+|{{Layout/Station|CC5}} ↔ {{Layout/Station|CC6}}||{{CCL}}||1.5||
+|-
+|{{Layout/Station|CC28}} ↔ {{Layout/Station|CC29}}||{{CCL}}||1.5||
+|-
+|{{Layout/Station|DT24}} ↔ {{Layout/Station|DT25}}||{{DTL}}||1.5||
+|-
+|{{Layout/Station|TE23}} ↔ {{Layout/Station|TE24}}||{{TEL}}||1.5||
+|-
+|{{Layout/Station|NE9}} ↔ {{Layout/Station|NE10}}||{{NEL}}||1.6||
+|-
+|{{Layout/Station|NE17}} ↔ {{Layout/Station|NE18}}||{{NEL}}||1.6||
+|-
+|{{Stn/Bishan|code=|ns=}} ↔ {{Layout/Station|CC16}}||{{CCL}}||1.6||
+|-
+|{{Layout/Station|DT6}} ↔ {{Layout/Station|DT7}}||{{DTL}}||1.6||
+|-
+|{{Stn/Stevens|code=|te=}} ↔ {{Stn/Newton|code=|ns=}}||{{DTL}}||1.6||
+|-
+|{{Stn/Kranji}} ↔ {{Stn/Marsiling}}||{{NSL}}||1.7||
+|-
+|{{Stn/Woodlands|code=|te=}} ↔ {{Stn/Admiralty}}||{{NSL}}||1.7||
+|-
+|{{Stn/Canberra}} ↔ {{Stn/Yishun}}||{{NSL}}||1.7||
+|-
+|{{Layout/Station|EW22}} ↔ {{Layout/Station|EW23}}||{{EWL}}||1.7||
+|-
+|{{Stn/Gul Circle}} ↔ {{Stn/Tuas Crescent}}||{{EWL}}||1.7||
+|-
+|{{Layout/Station|NE12}} ↔ {{Layout/Station|NE13}}||{{NEL}}||1.7||
+|-
+|{{Layout/Station|NE16}} ↔ {{Layout/Station|NE17}}||{{NEL}}||1.7||
+|-
+|{{Layout/Station|CC14}} ↔ {{Stn/Bishan|code=|ns=}}||{{CCL}}||1.7||
+|-
+|{{Layout/Station|DT4}} ↔ {{Layout/Station|DT5}}||{{DTL}}||1.7||
+|-
+|{{Layout/Station|DT30}} ↔ {{Layout/Station|DT31}}||{{DTL}}||1.7||
+|-
+|{{Layout/Station|TE5}} ↔ {{Layout/Station|TE6}}||{{TEL}}||1.7||
+|-
+|{{Stn/Stevens|code=|dt=}} ↔ {{Layout/Station|TE12}}||{{TEL}}||1.7||
+|-
+|{{Stn/Marina Bay|code=|ns=|cc=}} ↔ {{Layout/Station|TE22}}||{{TEL}}||1.7||
+|-
+|{{Layout/Station|TE27}} ↔ {{Layout/Station|TE28}}||{{TEL}}||1.7||
+|-
+|{{Layout/Station|EW26}} ↔ {{Stn/Boon Lay|code=|jr=}}||{{EWL}}||1.8||
+|-
+|{{Layout/Station|DT29}} ↔ {{Layout/Station|DT30}}||{{DTL}}||1.8||
+|-
+|{{Stn/Tanah Merah}} ↔ {{Stn/Bedok}}||{{EWL}}||1.9||
+|-
+|{{Stn/Tanah Merah}} ↔ {{Stn/Expo|code=|dt=}}||{{EWL}}||1.9||
+|-
+|{{Stn/Bedok}} ↔ {{Stn/Kembangan}}||{{EWL}}||2.0||
+|-
+|{{Stn/Jurong East|code=|ew=}} ↔ {{Stn/Bukit Batok}}||{{NSL}}||2.1||
+|-
+|{{Layout/Station|TE8}} ↔ {{Stn/Caldecott|code=|cc=}}||{{TEL}}||2.2||
+|-
+|{{Stn/Joo Koon}} ↔ {{Stn/Gul Circle}}||{{EWL}}||2.3||
+|-
+|{{Stn/Admiralty}} ↔ {{Stn/Sembawang}}||{{NSL}}||2.4||
+|-
+|{{Stn/Ang Mo Kio}} ↔ {{Stn/Bishan|code=|cc=}}||{{NSL}}||2.4||
+|-
+|{{Layout/Station|EW1}} ↔ {{Layout/Station|EW2}}||{{EWL}}||2.4||
+|-
+|{{Layout/Station|EW3}} ↔ {{Stn/Tanah Merah}}||{{EWL}}||2.5||
+|-
+|{{Stn/Pioneer}} ↔ {{Stn/Joo Koon}}||{{EWL}}||2.6||
+|-
+|{{Stn/HarbourFront|code=|cc=}} ↔ {{Stn/Outram Park|code=|ew=|te=}}||{{NEL}}||2.6||
+|-
+|{{Layout/Station|DT33}} ↔ {{Layout/Station|DT34}}||{{DTL}}||2.6||
+|-
+|{{Layout/Station|TE4}} ↔ {{Layout/Station|TE5}}||{{TEL}}||2.6||
+|-
+|{{Layout/Station|TE22}} ↔ {{Layout/Station|TE23}}||{{TEL}}||2.7||
+|-
+|{{Stn/Caldecott|code=|cc=}} ↔ {{Stn/Stevens|code=|dt=}}||{{TEL}}||3.0||
+|-
+|{{Stn/Bukit Gombak}} ↔ {{Stn/Choa Chu Kang|code=|bp=}}||{{NSL}}||3.3||
+|-
+|{{Layout/Station|EW23}} ↔ {{Stn/Jurong East|code=|ns=}}||{{EWL}}||3.5||
+|-
+|{{Stn/Caldecott|code=|te=}} ↔ {{Layout/Station|CC19}}||{{CCL}}||3.9||
+|-
+|{{Stn/Yew Tee}} ↔ {{Stn/Kranji}}||{{NSL}}||4.1||
+|-
+|{{Layout/Station|TE3}} ↔ {{Layout/Station|TE4}}||{{TEL}}||4.4||
+|-
+|{{Stn/Expo|code=|dt=}} ↔ {{Stn/Changi Airport}}||{{EWL}}||4.5||
+|-
+|{{Stn/Khatib}} ↔ {{Stn/Yio Chu Kang}}||{{NSL}}||4.9||
+|}
+
+[[Category:Rail Transport]]
+"@
+
+echo $data
